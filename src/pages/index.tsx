@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { ActionSchema } from "actionschema/src/types/action-schema.schema";
 import { schemas } from "../example-schemas";
+import Link from "next/link";
 
 /**
 Simple UI like https://rjsf-team.github.io/react-jsonschema-form/
@@ -87,7 +88,10 @@ export const IndexPage = () => {
     <div className="flex flex-row justify-between items-center">
       {/* Left side of header */}
       <div className="flex flex-row gap-8 items-center">
-        <a href="/" className="flex items-center justify-center px-4 text-3xl">
+        <Link
+          href="/"
+          className="flex items-center justify-center px-4 text-3xl"
+        >
           <Image
             priority
             loading="eager"
@@ -97,7 +101,7 @@ export const IndexPage = () => {
             height={40}
             alt="logo"
           />
-        </a>
+        </Link>
 
         <SelectActionSchema />
 
