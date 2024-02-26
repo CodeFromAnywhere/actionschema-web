@@ -125,9 +125,8 @@ export const SelectInput = <T extends unknown>({
             />
           </div>
 
-          <datalist placeholder={title} id={id}>
-            {renderOptions()}
-          </datalist>
+          {/* placeholder={title} */}
+          <datalist id={id}>{renderOptions()}</datalist>
         </span>
       ) : (
         <select
