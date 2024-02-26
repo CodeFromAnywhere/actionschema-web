@@ -1,5 +1,25 @@
 import type { MouseEvent } from "react";
-import type { ActionSheetIOSOptions } from "react-native";
+
+export type ProcessedColorValue = number | OpaqueColorValue;
+type OpaqueColorValue = symbol & { __TYPE__: "Color" };
+export type ColorValue = string | OpaqueColorValue;
+
+/**
+ * @see: https://reactnative.dev/docs/actionsheetios#content
+ */
+export interface ActionSheetIOSOptions {
+  title?: string | undefined;
+  options: string[];
+  cancelButtonIndex?: number | undefined;
+  destructiveButtonIndex?: number | number[] | undefined | null;
+  message?: string | undefined;
+  anchor?: number | undefined;
+  tintColor?: ColorValue | ProcessedColorValue | undefined;
+  cancelButtonTintColor?: ColorValue | ProcessedColorValue | undefined;
+  userInterfaceStyle?: "light" | "dark" | undefined;
+  disabledButtonIndices?: number[] | undefined;
+}
+
 export type Item<T = undefined> = {
   /**
    * Must be string because the HTML select element can only contain a string
