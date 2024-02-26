@@ -2,10 +2,10 @@ import { ChangeEvent } from "react";
 import { ChangeEventHandler } from "react";
 import { useState } from "react";
 import { Item } from "./types.js";
-import { onlyUnique2 } from "@/lib/js-util/onlyUnique2.js";
-import { notEmpty } from "@/lib/js-util/notEmpty.js";
-import { SelectProps } from "./types.js";
-import { getRealValue } from "./getRealValue.js";
+import { onlyUnique2 } from "@/lib/js-util/onlyUnique2";
+import { notEmpty } from "@/lib/js-util/notEmpty";
+import { SelectProps } from "./types";
+import { getRealValue } from "./getRealValue";
 /**
  * renders either a SelectDropdown or SelectDrawer, based on screensize
  */

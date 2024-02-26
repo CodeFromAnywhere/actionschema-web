@@ -1,4 +1,4 @@
-import { Item } from "./types.js";
+import { Item } from "./types";
 export const getRealValue = <T extends unknown>({
   value,
   selectFirstOption,

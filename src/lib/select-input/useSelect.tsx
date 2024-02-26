@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { SelectInput } from "./SelectInput.js";
-import { Item } from "./types.js";
+import { SelectInput } from "./SelectInput";
+import { Item } from "./types";
 /**
 Create a value selector in a single line of code, including its state!
 

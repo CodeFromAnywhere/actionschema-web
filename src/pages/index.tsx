@@ -183,3 +183,4 @@ export const IndexPage = () => {
     </div>
   );
 };
+export default IndexPage;
