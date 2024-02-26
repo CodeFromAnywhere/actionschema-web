@@ -3,7 +3,8 @@ export const schemas: {
   [key: string]: ActionSchema;
 } = {
   example1: {
-    $schema: "http://json-schema.org/draft-07/schema#",
+    $schema:
+      "https://raw.githubusercontent.com/CodeFromAnywhere/ActionSchema/main/schemas/action-schema.schema.json",
     "x-is-public": true,
     properties: {
       $schema: {
