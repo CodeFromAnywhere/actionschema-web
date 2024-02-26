@@ -74,9 +74,12 @@
             const monaco = await monacoPromise;
 
 
+            monaco.languages.json.jsonDefaults.diagnosticsOptions.enableSchemaRequest = true;
+
             monaco.languages.typescript.typescriptDefaults.setCompilerOptions({
                 target: monaco.languages.typescript.ScriptTarget.ESNext,
                 allowNonTsExtensions: true,
+
                 moduleResolution: monaco.languages.typescript.ModuleResolutionKind.NodeJs,
                 module: monaco.languages.typescript.ModuleKind.CommonJS,
                 noEmit: true,
