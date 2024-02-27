@@ -40,7 +40,7 @@ export const useSelect = <T extends unknown>(
       title="Test"
       onChange={(v) => {
         setValue(v);
-        console.log({ v });
+        // console.log({ v });
         if (v) {
           withValue?.(v);
         }

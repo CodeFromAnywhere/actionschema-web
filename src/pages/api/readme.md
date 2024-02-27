@@ -1,0 +1,2 @@
+- "cors proxy" is needed for Browser API calls to minimise cors errors
+- "execute" is needed for Serverless API calls
